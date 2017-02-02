@@ -1,0 +1,9 @@
+Tank dimensions:
+Front axle to rear axle: 137mm
+Top axles to idler axles: 14mm
+
+Width of body: 65mm
+Height from ground to top of track: 45mm
+
+Distance from top of gearbox ass'y to top of track: 7mm
+Distance from ground to idler axle: 13mm

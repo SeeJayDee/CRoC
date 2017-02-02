@@ -1,0 +1,60 @@
+Arduino Micro Pins:
+(anticlockwise from top-right when held with USB on left)
+
+MOSI	unused (PB2)
+SS		unused (PB0) (connected to RX_LED)
+TX		Tx -> Bluetooth Rx
+RX		Rx <- Bluetooth Tx
+R		Reset tied to ATtiny
+GND		tied to ATtiny GND, turret servo GND and Blutooth GND
+2		SDA -> ATtiny
+3		SCL -> ATtiny
+4		Turret Servo (Software Interrupt PWM)
+5		Barrel Servo (using OC3A (Hardware PWM) - thru slip-ring)
+6		Motor B Speed (to BENBL input - uses hardware PWM OC4D)
+7		Motor A phase select
+8		Motor B Phase select
+9		LED Red (OC1A)
+10		LED Green (OC1B)
+11		LED Blue (OC1C)
+12		IR message received flag (INPUT, pin 12 <- ATtiny) - pulled low when ATtiny decodes an IR signal
+13		Motor A Speed (to AENBL input - uses hardware PWM OC4A) (also connected to an onboard LED)
+3V		unused
+RF		unused
+A0		Sound module key input 5
+A1		Sound module key input 4
+A2		Sound module key input 3
+A3		Sound module key input 2
+A4		Sound module key input 1
+A5		Sighting laser output (via slip-ring)
+[x]		NC pin
+[x]		NC pin
+5V		Supply for slip-ring, turret servo, sound module, motor driver (logic side)
+RS		not used (internally connected to other 'R' pin)
+GND		GND for slip-ring, motor driver, sound module
+VI		Vin - onboard voltage regulator input - connected directly to SMPS *input*
+MISO	unused (PB3)
+SCK		unused (PB1)
+
+MISO, MOSI & SCK are also accessible from the ICSP header
+
+
+ATtiny85 pins:
+labelled from pin1 marking
+1		RST <- Arduino R pin
+2		PB3 - IR Flag output -> Arduino pin 12
+3		PB4 - IR transmit output -> slip-ring
+4		GND
+5		SDA <-> SDA (Arduino pin 2)
+6		PB1 <- IR receiver array *[[[ NEEDS INTERNAL PULLUP ]]]
+7		SCL <- SCL (Arduino pin 3)
+8		Vcc (5V)
+
+Slip-ring
+Slip ring wiring:
+1	Red:	5V
+2	Orange:	Laser
+3	Yellow:	Servo
+4	Green:	IR receiver
+5	Brown:	IR LED
+6	Black:	Ground

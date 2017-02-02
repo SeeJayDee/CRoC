@@ -1,0 +1,23 @@
+Tank Design Meeting 27/5
+
+Issues raised w.r.t. Arduino Mega or Micro. --- 
+Mega: more memory, more I/O ports
+Micro MUCH smaller footprint
+Query ESP8266
+
+Asked about treads: "Zumo" ones would be preferred if larger ones available
+
+Motors fit for purpose
+
+Laser pointer shouldn't be a safety issue - use pwm to reduce power if necessary
+
+Do we want to raise/lower barrel?
+Yes, but difficult to implement.
+
+*** FRONTIER ROBOTICS willing to sponsor some parts (tbc) & 3D-printing services ***
+
+Batteries: confirmed LiPo
+?? brand/size ??
+"2S" - maybe?
+regulators probably not necessary
+Switchmode converter for power!!!

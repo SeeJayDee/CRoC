@@ -1,0 +1,11 @@
+Micro to set up as IR sender, servo control, play "lazer" noise, has button.
+
+Receiver to have explosion sound & flash one LED
+
+
+Chris - soundz
+Chris - set up receiver
+C - look into compatibility of Servo lib with IRremote
+
+Nathan - redesign/build turred ass'y
+Nathan - set up sender + barrel

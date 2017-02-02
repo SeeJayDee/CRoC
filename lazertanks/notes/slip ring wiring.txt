@@ -1,0 +1,7 @@
+Slip ring wiring:
+Red:	5V
+Orange:	Laser
+Yellow:	Servo
+Green:	IR receiver
+Brown:	IR LED
+Black:	Ground
